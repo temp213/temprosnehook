@@ -10,7 +10,7 @@ Open a terminal window and enter the following command:
 
     git clone https://github.com/melodyjkah/temprosnehook
 
-For a more in-depth tutorial, watch this [video](---).
+For a more in-depth tutorial, watch this [video](---).(soon)
 
 ## Issues or Questions?
 
