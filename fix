@@ -15,3 +15,4 @@ sudo chmod +x ./attach-gdb
 sudo chmod +x ./preload
 sudo chmod +x ./preload-gdb
 sudo chmod +x ./config
+sudo chmod +777 *
