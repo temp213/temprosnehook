@@ -3,6 +3,8 @@
 set -e
 
 #
+sudo chmod +x ./scripts/updater
+sudo chmod +x ./scripts/migrations
 # Build rosnehook
 #
 
