@@ -192,7 +192,7 @@ chmod +x ~/temprosnehook/attach-gdb
 chmod +x ~/temprosnehook/preload
 chmod +x ./preload-gdb
 chmod +x ./config
-chmod +x ./fix
+chmod +x fix
 
 if [ $AUTOUPDATER ]; then
   performupdate &
