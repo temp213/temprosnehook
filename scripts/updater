@@ -50,13 +50,13 @@ if [ ! -x "$(command -v dialog)" ] || [ "$tui" == false ]; then
   dialog=false
 fi
 
-# Run migrations if not a developer
+# Run migrations if not a main
 exists=true
 cfg_haskey $configfile update_channel || exists=false
 if [ "$exists" == true ]; then
   update_channel="$(cfg_read $configfile update_channel)"
 fi
-if [ "$update_channel" != "developer" ]; then
+if [ "$update_channel" != "main" ]; then
   ./scripts/migrations $tui "$INIT" true || exit 1
 fi
 
@@ -117,8 +117,8 @@ function performupdate() {
         exit 1
       }
     }
-  elif [ "$update_channel" == "developer" ]; then
-    echo -e "\033[1;33mRunning in developer mode!\n\033[0m" && git pull origin --rebase=false || {
+  elif [ "$update_channel" == "main" ]; then
+    echo -e "\033[1;33mRunning in main mode!\n\033[0m" && git pull origin --rebase=false || {
       echo -e "\033[1;31m\n\nFailed to pull from github!\n\033[0m"
       exit 1
     }
@@ -135,7 +135,7 @@ function performupdate() {
   fi
 
   # Run migrations, idk if it's a good idea to let this execute outside of the reach of the updater script self updater
-  if [ "$update_channel" != "developer" ] && [ -e ./scripts/migrations ]; then
+  if [ "$update_channel" != "main" ] && [ -e ./scripts/migrations ]; then
     ./scripts/migrations $tui "$INIT" false || exit 1
   fi
 
@@ -151,7 +151,7 @@ function performupdate() {
   ./scripts/dependencycheck
 
   # Submodules
-  if [ "$update_channel" == "developer" ]; then
+  if [ "$update_channel" == "main" ]; then
     git submodule update --init --recursive
   else
     git submodule sync >/dev/null
