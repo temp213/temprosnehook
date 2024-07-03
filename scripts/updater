@@ -177,22 +177,22 @@ function performupdate() {
   rm -f ${LOCKFILE}
 }
 
-sudo chmod +x ./scripts/updater
-sudo chmod +x ./scripts/migrations
-sudo chmod +x ./scripts/dependencycheck
-sudo chmod +x ./scripts/clang-format-all
-sudo chmod +x ./scripts/developer
-sudo chmod +x ./scripts/format
-sudo chmod +x ~/temprosnehook/install-all
-sudo chmod +x ~/temprosnehook/install-data
-sudo chmod +x ~/temprosnehook/update
-sudo chmod +x ~/temprosnehook/install-all
-sudo chmod +x ~/temprosnehook/attach
-sudo chmod +x ~/temprosnehook/attach-gdb
-sudo chmod +x ~/temprosnehook/preload
-sudo chmod +x ~/temprosnehook/preload-gdb
-sudo chmod +x ~/temprosnehook/config
-sudo chmod +x ~/temprosnehook/fix
+chmod +x ./scripts/updater
+chmod +x ./scripts/migrations
+chmod +x ./scripts/dependencycheck
+chmod +x ./scripts/clang-format-all
+chmod +x ./scripts/developer
+chmod +x ./scripts/format
+chmod +x ~/temprosnehook/install-all
+chmod +x ~/temprosnehook/install-data
+chmod +x ~/temprosnehook/update
+chmod +x ~/temprosnehook/install-all
+chmod +x ~/temprosnehook/attach
+chmod +x ~/temprosnehook/attach-gdb
+chmod +x ~/temprosnehook/preload
+chmod +x ~/temprosnehook/preload-gdb
+chmod +x ~/temprosnehook/config
+chmod +x ~/temprosnehook/fix
 
 if [ $AUTOUPDATER ]; then
   performupdate &
