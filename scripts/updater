@@ -183,16 +183,6 @@ chmod +x ./scripts/dependencycheck
 chmod +x ./scripts/clang-format-all
 chmod +x ./scripts/developer
 chmod +x ./scripts/format
-chmod +x ~/temprosnehook/install-all
-chmod +x ./install-data
-chmod +x ~/temprosnehook/update
-chmod +x ~/temprosnehook/install-all
-chmod +x ~/temprosnehook/attach
-chmod +x ~/temprosnehook/attach-gdb
-chmod +x ~/temprosnehook/preload
-chmod +x ./preload-gdb
-chmod +x ./config
-chmod +x fix
 
 if [ $AUTOUPDATER ]; then
   performupdate &
