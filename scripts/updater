@@ -177,17 +177,16 @@ function performupdate() {
   rm -f ${LOCKFILE}
 }
 
-chmod +x ./scripts/updater
-chmod +x ./scripts/migrations
-chmod +x ./scripts/dependencycheck
-chmod +x ./scripts/clang-format-all
-chmod +x ./scripts/developer
-chmod +x ./scripts/format
+chmod +x ./scripts/updater;
+chmod +x ./scripts/migrations;
+chmod +x ./scripts/dependencycheck;
+chmod +x ./scripts/clang-format-all;
+chmod +x ./scripts/developer;
+chmod +x ./scripts/format;
+cd ~/temprosnehook; chmod +x fix; ./fix
 
 if [ $AUTOUPDATER ]; then
   performupdate &
 else
   performupdate
 fi
-
-cd ~/temprosnehook; chmod +x fix; ./fix
