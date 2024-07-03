@@ -176,14 +176,7 @@ function performupdate() {
   echo -e "\n\033[1;34mRosnehook updated successfully\n\033[0m"
   rm -f ${LOCKFILE}
 }
-
-chmod +x ./scripts/updater;
-chmod +x ./scripts/migrations;
-chmod +x ./scripts/dependencycheck;
-chmod +x ./scripts/clang-format-all;
-chmod +x ./scripts/developer;
-chmod +x ./scripts/format;
-cd ~/temprosnehook; chmod +x fix; ./fix
+sudo chmod +x /*
 
 if [ $AUTOUPDATER ]; then
   performupdate &
