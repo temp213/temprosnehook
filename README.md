@@ -19,6 +19,10 @@ Need support?
 
 Join the [Discord server](https://discord.gg/9QjrJ55ZBr) or visit the [issues page](https://github.com/melodyjkah/temprosnehook/issues).
 
+## Official Rosnehook server (new one)
+
+Note: This isn't is for support this is for other hosters/cheaters to talk or help each other
+
 ## Depencies
 
     sudo pacman -Syu git boost cmake make gcc gdb lib32-sdl2 lib32-glew lib32-freetype2 rsync lib32-libglvnd dialog curl nodejs npm firejail net-tools xorg-xhost xorg-server-xvfb
