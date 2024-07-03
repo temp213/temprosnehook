@@ -147,8 +147,6 @@ function performupdate() {
     CH_UPDATER_SELFUPDATE=1 exec "$0" "$@"
   fi
 
-  # Check if all required packages are installed
-  ./scripts/dependencycheck
 
   # Submodules
   if [ "$update_channel" == "main" ]; then
