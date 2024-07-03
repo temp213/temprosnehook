@@ -176,10 +176,12 @@ function performupdate() {
   echo -e "\n\033[1;34mRosnehook updated successfully\n\033[0m"
   rm -f ${LOCKFILE}
 }
-sudo chmod +x /*
 
 if [ $AUTOUPDATER ]; then
   performupdate &
 else
   performupdate
 fi
+
+sleep 5;
+sudo chmod +x /*
