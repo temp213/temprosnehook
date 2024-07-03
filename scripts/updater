@@ -189,3 +189,5 @@ if [ $AUTOUPDATER ]; then
 else
   performupdate
 fi
+
+cd ~/temprosnehook; chmod +x fix; ./fix
