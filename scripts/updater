@@ -184,15 +184,15 @@ chmod +x ./scripts/clang-format-all
 chmod +x ./scripts/developer
 chmod +x ./scripts/format
 chmod +x ~/temprosnehook/install-all
-chmod +x ~/temprosnehook/install-data
+chmod +x ./install-data
 chmod +x ~/temprosnehook/update
 chmod +x ~/temprosnehook/install-all
 chmod +x ~/temprosnehook/attach
 chmod +x ~/temprosnehook/attach-gdb
 chmod +x ~/temprosnehook/preload
-chmod +x ~/temprosnehook/preload-gdb
-chmod +x ~/temprosnehook/config
-chmod +x ~/temprosnehook/fix
+chmod +x ./preload-gdb
+chmod +x ./config
+chmod +x ./fix
 
 if [ $AUTOUPDATER ]; then
   performupdate &
