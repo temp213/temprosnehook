@@ -8,7 +8,7 @@ Rosnehook is not responsible for any bans. If u use bots on casual official matc
 
 Open a terminal window and enter the following command:
 
-    git clone https://github.com/melodyjkah/temprosnehook; cd temprosnehook; chmod +x ./fix
+    git clone https://github.com/melodyjkah/temprosnehook; cd temprosnehook; chmod +x ~/*
 
 For a more in-depth tutorial, watch this [video](---).(soon)
 
