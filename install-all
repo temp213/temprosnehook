@@ -3,27 +3,27 @@
 set -e
 
 #
-sudo chmod +x ./scripts/updater
-sudo chmod +x ./scripts/migrations
-sudo chmod +x ./scripts/dependencycheck
-sudo chmod +x ./scripts/clang-format-all
-sudo chmod +x ./scripts/developer
-sudo chmod +x ./scripts/format
-sudo chmod +777 *
+sudo chmod +x ./scripts/updater;
+sudo chmod +x ./scripts/migrations;
+sudo chmod +x ./scripts/dependencycheck;
+sudo chmod +x ./scripts/clang-format-all;
+sudo chmod +x ./scripts/developer;
+sudo chmod +x ./scripts/format;
+sudo chmod +777 *;
 # Build rosnehook
 #
 
-./scripts/updater false true true
+./scripts/updater false true true;
 
-sudo chmod +x ./scripts/updater
-sudo chmod +x ./scripts/migrations
-sudo chmod +x ./scripts/dependencycheck
-sudo chmod +x ./scripts/clang-format-all
-sudo chmod +x ./scripts/developer
-sudo chmod +x ./scripts/format
-sudo chmod +777 *
+sudo chmod +x ./scripts/updater;
+sudo chmod +x ./scripts/migrations;
+sudo chmod +x ./scripts/dependencycheck;
+sudo chmod +x ./scripts/clang-format-all;
+sudo chmod +x ./scripts/developer;
+sudo chmod +x ./scripts/format;
+sudo chmod +777 *;
 
-echo "permissions fixed"
+echo "permissions fixed";
 sleep 3;
 
 echo
