@@ -27,3 +27,4 @@ Join the [Discord server](https://discord.gg/9QjrJ55ZBr) or visit the [issues pa
 
 
 Some things can be broken because original owner is gone and idk this shitty ass code
+- Thanks for replacing my credits, retard.
